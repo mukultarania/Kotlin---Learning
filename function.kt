@@ -9,10 +9,18 @@ fun main() {
     even_odd(5)
 }
 
-fun add(num1: Int, num2: Int):Int
+// Default Arguments
+// Parameters is of Val type
+fun add(num1: Int = 1, num2: Int = 1):Int
 {
     return num1+num2
 }
+
+/**
+* Inline function and Unit as a return type
+* fun add(num1: Int, num2 Int) = num1+num2 
+*/
+
 
 fun even_odd(num1: Int){
     val res = if(num1%2 == 0) "EVEN" else "ODD"
